@@ -13,6 +13,8 @@ It provides basic serialization of native blocks:
 - Links
 - Tables
 
+No css styles are provided, only basic html templates to wrap blocks.
+
 ## Usage
 
 ```
