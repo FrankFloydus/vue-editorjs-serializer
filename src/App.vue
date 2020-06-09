@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <VSerializer :json="blocks" debugMode />
+    <vue-editor-serializer :json="blocks" debugMode />
   </div>
 </template>
 
 <script>
-import VSerializer from "./components/VSerializer.vue";
+import VueEditorSerializer from "./components/VueEditorSerializer.vue";
 import data from "./data/data";
 
 export default {
@@ -16,7 +16,7 @@ export default {
     };
   },
   components: {
-    VSerializer
+    VueEditorSerializer
   }
 };
 </script>

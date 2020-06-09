@@ -16,7 +16,7 @@ It provides basic serialization of native blocks:
 ## Usage
 
 ```
-<Vserializer />
+<vue-editor-serializer />
 ```
 
 ### Props
