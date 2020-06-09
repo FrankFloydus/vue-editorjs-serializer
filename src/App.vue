@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <VSerializer :json="blocks" />
+    <VSerializer :json="blocks" debugMode />
   </div>
 </template>
 

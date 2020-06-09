@@ -4,6 +4,11 @@
 
 <script>
 export default {
-  props: ["content"]
+  props: {
+    content: {
+      type: String,
+      required: true
+    }
+  }
 };
 </script>

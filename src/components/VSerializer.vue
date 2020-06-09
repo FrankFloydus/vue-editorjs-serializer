@@ -8,15 +8,10 @@
         <ParagraphBlock :content="block.data.text" />
       </div>
       <div v-if="block.type === 'list'">
-        <ul>
-          <li v-for="(item, index) in block.data.items" :key="index">{{ item }}</li>
-        </ul>
+        <ListBlock :listType="block.data.style" :items="block.data.items" />
       </div>
       <div v-if="block.type === 'image'">
-        <figure>
-          <img :src="block.data.file.url" :alt="block.data.caption" />
-          <figcaption>{{ block.data.caption }}</figcaption>
-        </figure>
+        <ImageBlock :url="block.data.file.url" altText="my image" :caption="block.data.caption" />
       </div>
       <div v-if="block.type === 'rawTool'">
         <div v-html="block.data.html"></div>
@@ -52,14 +47,22 @@
 <script>
 import HeaderBlock from "./BlockElements/HeaderBlock";
 import ParagraphBlock from "./BlockElements/ParagraphBlock";
+import ListBlock from "./BlockElements/ListBlock";
+import ImageBlock from "./BlockElements/ImageBlock";
+
 export default {
   mounted() {
-    console.log(this.json);
+    this.debugMode && console.log(this.json);
   },
-  props: ["json"],
+  props: {
+    json: Object,
+    debugMode: Boolean
+  },
   components: {
     HeaderBlock,
-    ParagraphBlock
+    ParagraphBlock,
+    ListBlock,
+    ImageBlock
   }
 };
 </script>
