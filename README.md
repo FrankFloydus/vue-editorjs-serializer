@@ -1,42 +1,24 @@
 # vue-editorjs-serializer
 
-A small tool to serialize [Editor.js](https://editorjs.io/) JSON output.
-It provides basic serialization of native blocks.
+A VueJS component to serialize [Editor.js](https://editorjs.io/) JSON output.
+It provides basic serialization of native blocks:
 
-- header
-- paragraph
-- image
-- list
-- raw html
-- code
-- blockquote
-- links
-- tables
+- Header
+- Paragraph
+- Image
+- List
+- Raw HTML
+- Code
+- Blockquote
+- Links
+- Tables
 
-## Project setup
-
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
+## Usage
 
 ```
-npm run serve
+<Vserializer />
 ```
 
-### Compiles and minifies for production
-
-```
-npm run build
-```
-
-### Lints and fixes files
-
-```
-npm run lint
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
+| prop | type   | value               |     |
+| ---- | ------ | ------------------- | --- |
+| json | Object | EditorJS Json Input |     |
