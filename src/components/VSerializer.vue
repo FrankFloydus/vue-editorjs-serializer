@@ -11,34 +11,30 @@
         <ListBlock :listType="block.data.style" :items="block.data.items" />
       </div>
       <div v-if="block.type === 'image'">
-        <ImageBlock :url="block.data.file.url" altText="my image" :caption="block.data.caption" />
+        <ImageBlock
+          :url="block.data.file.url"
+          :altText="block.data.caption"
+          :caption="block.data.caption"
+        />
       </div>
       <div v-if="block.type === 'rawTool'">
-        <div v-html="block.data.html"></div>
+        <RawBlock :html="block.data.html" />
       </div>
       <div v-if="block.type === 'code'">
-        <pre>
-            {{ block.data.code }}
-        </pre>
+        <CodeBlock :code="block.data.code" />
       </div>
       <div v-if="block.type === 'quote'">
-        <blockquote>
-          <p>{{ block.data.text }}</p>
-          <small>{{ block.data.caption }}</small>
-        </blockquote>
+        <QuoteBlock :text="block.data.text" :caption="block.data.caption" />
       </div>
       <div v-if="block.type === 'table'">
-        <table>
-          <tr v-for="(row, index) in block.data.content" :key="index">
-            <td
-              v-for="(row, idx) in block.data.content"
-              :key="idx"
-            >{{ block.data.content[index][idx] }}</td>
-          </tr>
-        </table>
+        <TableBlock :tableData="block.data.content" />
       </div>
       <div v-if="block.type === 'linkTool'">
-        <a :href="block.data.link" :title="block.data.meta.description">{{ block.data.meta.title }}</a>
+        <LinkBlock
+          :link="block.data.link"
+          :title="block.data.meta.title"
+          :description="block.data.meta.description"
+        />
       </div>
     </div>
   </div>
@@ -49,6 +45,11 @@ import HeaderBlock from "./BlockElements/HeaderBlock";
 import ParagraphBlock from "./BlockElements/ParagraphBlock";
 import ListBlock from "./BlockElements/ListBlock";
 import ImageBlock from "./BlockElements/ImageBlock";
+import RawBlock from "./BlockElements/RawBlock";
+import CodeBlock from "./BlockElements/CodeBlock";
+import QuoteBlock from "./BlockElements/QuoteBlock";
+import TableBlock from "./BlockElements/TableBlock";
+import LinkBlock from "./BlockElements/LinkBlock";
 
 export default {
   mounted() {
@@ -62,8 +63,12 @@ export default {
     HeaderBlock,
     ParagraphBlock,
     ListBlock,
-    ImageBlock
+    ImageBlock,
+    RawBlock,
+    CodeBlock,
+    QuoteBlock,
+    TableBlock,
+    LinkBlock
   }
 };
 </script>
-

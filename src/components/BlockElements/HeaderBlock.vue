@@ -11,10 +11,7 @@ export default {
     }
   },
   render: function(createElement) {
-    return createElement(
-      "h" + this.level, // tag name
-      this.content
-    );
+    return createElement("h" + this.level, this.content);
   }
 };
 </script>
