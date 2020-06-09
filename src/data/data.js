@@ -1,5 +1,5 @@
 export default {
-  "time": 1591628766549,
+  "time": 1591692604707,
   "blocks": [
     {
       "type": "header",
@@ -69,85 +69,43 @@ export default {
       },
     },
     {
-      "type": "paragraph",
-      "data": {
-        "text":
-          'Given data can be used as you want: render with HTML for <code class="inline-code">Web clients</code>, render natively for <code class="inline-code">mobile apps</code>, create markup for <code class="inline-code">Facebook Instant Articles</code> or <code class="inline-code">Google AMP</code>, generate an <code class="inline-code">audio version</code> and so on.',
-      },
-    },
-    {
-      "type": "paragraph",
-      "data": {
-        "text":
-          "Clean data is useful to sanitize, validate and process on the backend.",
-      },
-    },
-    {
-      "type": "delimiter",
-      "data": {},
-    },
-    {
-      "type": "paragraph",
-      "data": {
-        "text":
-          "We have been working on this project more than three years. Several large media projects help us to test and debug the Editor, to make it's core more stable. At the same time we significantly improved the API. Now, it can be used to create any plugin for any task. Hope you enjoy. 😏",
-      },
-    },
-    {
-      "type": "image",
-      "data": {
-        "file": {
-          "url": "https://codex.so/public/app/img/external/codex2x.png",
-        },
-        "caption": "hello",
-        "withBorder": false,
-        "stretched": false,
-        "withBackground": false,
-      },
-    },
-    {
-      "type": "rawTool",
-      "data": {
-        "html": "<html>\n<body>",
-      },
-    },
-    {
-      "type": "code",
-      "data": {
-        "code":
-          "  trix-toolbar .trix-button:disabled {\n    color: rgba(0, 0, 0, 0.125); }\n",
-      },
-    },
-    {
-      "type": "quote",
-      "data": {
-        "text": "This is a quote",
-        "caption": "M.L.King",
-        "alignment": "center",
-      },
-    },
-    {
       "type": "table",
       "data": {
         "content": [
-          ["1", "2"],
-          ["1", "3"],
+          ["1", "5"],
+          ["2", "6"],
+          ["3", "7"],
+          ["4", "8"],
         ],
       },
     },
     {
       "type": "linkTool",
       "data": {
-        "link": "https://editorjs.io/",
+        "link": "https://laravel.com/",
         "meta": {
-          "url": "https://editorjs.io/",
-          "domain": "editorjs.io/",
-          "title": "Editor.js",
-          "description": "A block-styled editor with clean JSON output",
+          "url": "https://laravel.com/",
+          "domain": "laravel.com/",
+          "title": "Laravel - The PHP Framework For Web Artisans",
+          "description": "",
           "image": {
             "url": "",
           },
         },
+      },
+    },
+    {
+      "type": "image",
+      "data": {
+        "file": {
+          "url": "/upload/temporary/o_436d32025a0d4f517ab0b1f88d43d435.jpg",
+          "width": 293,
+          "height": 260,
+        },
+        "caption": "Magento",
+        "withBorder": false,
+        "stretched": false,
+        "withBackground": false,
       },
     },
   ],
