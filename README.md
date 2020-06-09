@@ -19,6 +19,8 @@ It provides basic serialization of native blocks:
 <Vserializer />
 ```
 
+### Props
+
 | name  | type    | value                     |
 | ----- | ------- | ------------------------- |
 | json  | Object  | EditorJS Json Input       |
