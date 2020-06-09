@@ -21,7 +21,7 @@ No css styles are provided, only basic html templates to wrap blocks.
 <vue-editor-serializer />
 ```
 
-#### Still not published on npm. I will do it later. For now you can use the source files as is, if you need to use this component.
+#### Still not published on npm. I will do it later. If you need to use this component. you can use the source files as is.
 
 ### Props
 
